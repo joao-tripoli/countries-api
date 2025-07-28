@@ -27,6 +27,7 @@ Create a `.env` file in the root directory and add your API key:
 
 ```env
 WEATHER_API_KEY=your_weatherapi_key_here
+WEATHER_API_URL=https://api.weatherapi.com/v1
 ```
 
 Start the development server:
