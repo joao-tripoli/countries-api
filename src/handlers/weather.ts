@@ -13,8 +13,15 @@ export async function getCurrentWeather(
 
     const data = await response.json();
 
+    if (data.error) {
+      throw new Error(data.error.message || 'Invalid request');
+    }
+
     res.json(data);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch weather data' });
+    res.status(500).json({
+      error:
+        err instanceof Error ? err.message : 'Failed to fetch weather data',
+    });
   }
 }
