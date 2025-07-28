@@ -1,4 +1,4 @@
-# Weather API Proxy
+# Countries API
 
 A simple Node.js Express server that exposes a single route to fetch current weather data for a given country using the [WeatherAPI](https://www.weatherapi.com/). This project is the back-end project for the Worktable's Full Stack Developer hiring test.
 
